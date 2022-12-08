@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    background-image: url('./fondoNavBar.jpg');
+    background-size: cover;
+    
+}
+
+.nav-ul{
+    list-style-type: none;
+    
+}
+
+.nav-link{
+text-decoration: none;
+font-size: 18px;
+color: black;
+font-family: cursive;
+}
+
+.carrito{
+    height: 40px;
+    width: 40px;
+    
+   ;
+}
+
+.cuadro{
+    margin: 20px;
+    height: 120px;
+    width: 120px;
+    border-style: double;
+
+}
+
+
+li{
+    list-style: none;
+}
+
+.paragraphImg{
+    background-color: aqua;
+    text-align: center;
+    border-radius: 50%;
+}
+

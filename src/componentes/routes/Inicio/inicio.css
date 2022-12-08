@@ -1,0 +1,18 @@
+.inicio-container{
+    display: flex;
+justify-content: center;
+gap: 1rem;
+height: 600px;
+background-image: url(/src/imagenBody.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+    
+}
+
+.titulo-inicio{
+    text-align: center;
+    font-family: cursive;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
