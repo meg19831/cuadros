@@ -37,7 +37,7 @@ useEffect(()=>{
         <p className="producto-id"> {prod.id}</p>
         <div className =" buttonContainer">
           <div className='botonDetalle'>
-              <Link to={`/item/${prod.id}`} className="buttonHand">Ver Detalle</Link>
+              <Link to={`/item/${prod.id}`} className="buttonHand"><button className='detalle'>Ver Detalle</button></Link>
             </div>
           <div className='botones'>
           <button disabled={contador <= 0} onClick={buttonRestar} className = "button">-</button>

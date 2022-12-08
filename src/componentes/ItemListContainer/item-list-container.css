@@ -1,2 +1,13 @@
-
+.productos-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100%;
+    background-image: url(/src/imagenBody.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    }
 
