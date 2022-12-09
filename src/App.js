@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from "./componentes/Cart/Cart";
 import Inicio from "./componentes/routes/Inicio/Inicio";
 import Category from "./componentes/routes/Category/Category";
+import Error from "./componentes/Error/Error";
 
 
 
@@ -22,7 +23,8 @@ export default function App () {
           <Route exact path="/productos" element={<ItemListContainer/>}/>
           <Route exact path="/cart" element={<Cart/>}/>
           <Route exact path='/category' element={<Category/>}/>
-          
+          <Route exact path='/detalle' element={<ItemDetailContainer/>}/>
+          <Route exact path='*' element={<Error/>}/>
        </Routes>
        <Footer/>
     </BrowserRouter>
