@@ -32,6 +32,7 @@
     position:static;
     font-size: medium;
     margin-top: 230px;
+    margin-left: 2em;
 
 
     
@@ -63,18 +64,13 @@
     /* boton contador de cantidad de productos agregados*/
 
 
-    .counter{
 
-        background-color: red;
-display: inline-block;
-justify-content:start;
-flex-direction:row;
-justify-content: space-between;
-
-
-    }
 
     .contadorItemDetail{
         display: flex;
         
     }
+
+    /* .datail{
+       
+    } */

@@ -8,6 +8,10 @@
   display: flex;
   flex-wrap: wrap;
   background: url("./fondo.jpeg");
+  justify-content: center;
+  align-items: center;
+  
+ 
   
 }
 

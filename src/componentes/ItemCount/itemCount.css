@@ -1,0 +1,14 @@
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+
+.botonAgregar{
+    background-color:rgb(241, 21, 186);
+   
+    
+}

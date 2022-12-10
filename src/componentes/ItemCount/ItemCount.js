@@ -14,7 +14,8 @@ export const ItemCount = ( onAdd, stock) =>{
     }
 
     const agregarProducto =()=>{
-        onAdd(count)
+        console.log(`agregaste ${count} productos al carrito`);
+       /*  onAdd(count) */
     }
 
     return(
@@ -23,7 +24,7 @@ export const ItemCount = ( onAdd, stock) =>{
             <button disabled={count <= 0}  onClick={decrease}> - </button>
             <span> {count}</span>
             <button disabled={count >= stock }  onClick={increse}> + </button>
-            <button disabled= {stock <= 0 } onClick ={agregarProducto} > Agregar al carrito</button>
+            <button disabled= {stock <= 0 } onClick ={agregarProducto} className="botonAgregar"> Agregar al carrito</button>
         </div>
         </>
     )
