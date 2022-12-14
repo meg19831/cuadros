@@ -1,15 +1,15 @@
 
 import './item.css'
 
-import React, { useEffect, useState } from 'react';
-
+import React from 'react';
 import { Link } from "react-router-dom";
+
 
 
 
 const Item = ({prod})=> {
 
-  const [contador, setContador] = useState(0);
+/*   const [contador, setContador] = useState(0);
       
   const buttonAgregar = () => {
     setContador(contador + 1);
@@ -21,7 +21,7 @@ const Item = ({prod})=> {
 
 useEffect(()=>{
 
-}, [contador])
+}, [contador]) */
 
 
     return(
@@ -35,16 +35,16 @@ useEffect(()=>{
         <p className="precio">{prod.precio}</p>
         <p className="contenido-cuadros">{prod.contenido}</p>
         <p className="producto-id"> {prod.id}</p>
-        <div className =" buttonContainer">
-          <div className='botonDetalle'>
+          <div className =" buttonContainer">
+            <div className='botonDetalle'>
               <Link to={`/item/${prod.id}`} className="buttonHand"><button className='detalle'>Ver Detalle</button></Link>
-            </div>
-          <div className='botones'>
-          <button disabled={contador <= 0} onClick={buttonRestar} className = "button">-</button>
-          <button disabled={contador >=5} onClick={buttonAgregar} className = "button">+</button>
           </div>
-        </div>
-         <p className='contador'>En el carrito <br></br>{contador}</p>
+            {/* <div className='botones'>
+                  <button disabled={contador <= 0} onClick={buttonRestar} className = "button">-</button>
+                  <button disabled={contador >=5} onClick={buttonAgregar} className = "button">+</button>
+                </div> */}
+          </div>
+         {/* <p className='contador'>En el carrito <br></br>{contador}</p> */}
         </div >
         
         )

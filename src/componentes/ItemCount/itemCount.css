@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+
     
 
     
@@ -11,4 +13,24 @@
     background-color:rgb(241, 21, 186);
    
     
+}
+
+.button{
+
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    border-radius:  1px black;
+    display: inline-block;
+    justify-content:space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.span{
+    font-size: medium;
+    font-family: cursive;
+    font-style: bold;
+
 }

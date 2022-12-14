@@ -1,0 +1,7 @@
+.div-cart{
+    background-image:url("./fondo.jpeg");
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover ;
+
+}

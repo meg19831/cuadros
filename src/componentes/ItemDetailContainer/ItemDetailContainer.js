@@ -23,7 +23,7 @@ export const ItemDetailContainer = () => {
     return(
 
     <div className="container-detail">
-            <ItemDetail prod={prod}/>
+            <ItemDetail prod={prod} key = {prod.id}/>
         </div>
     );
           }

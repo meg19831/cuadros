@@ -2,6 +2,7 @@ import "./category.css";
 
 import React, { useState } from "react";
 import Categories from "../Categories/Categories";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   const [data, setData] = useState(Categories);
@@ -28,6 +29,9 @@ const Category = () => {
                         <img src={imagen} alt={imagen} className="img" />
                         <h2 className="title">{titulo}</h2>
                         <p>{precio}</p>
+                        <div className='botonDetalle'>
+              <Link to={`/item/${id}`} className="buttonHand"><button className='detalle'>Ver Detalle</button></Link>
+          </div>
                 </div>
               </>
             );
