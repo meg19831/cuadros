@@ -31,13 +31,15 @@ function CartProvider({children}) {
 
     //para remover carrito
 
-    const removeProducto = (id)=>setCart(cart.filter(prod=>prod.id===id))
+    const removeProducto = (id)=>setCart(cart.filter( prod=>prod.id!==id))
 
-    //const totalPrice = () => {
+    // el precio total 
         const totalPrice = () => {
             return cart.reduce((acc, prod) => acc += (prod.quantity * prod.precio), 0)
         }
-    
+    // total de productos
+
+    const totalProductos = ()=> cart.reduce((acumulador, productoActual)=>acumulador + productoActual.quantity,0)
     return (
     <CartContext.Provider value = {{
         cart,
@@ -46,6 +48,7 @@ function CartProvider({children}) {
         removeProducto,
         addProduct,
         totalPrice,
+        totalProductos
     }}>
 
         {children}

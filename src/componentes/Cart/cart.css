@@ -1,7 +1,10 @@
-.div-cart{
-    background-image:url("./fondo.jpeg");
+.contenedor-vacio-finalizar{
+    height: 200px;
     display: flex;
-    background-repeat: no-repeat;
-    background-size: cover ;
+    justify-content: center;
+    align-content: center;
+}
 
+.contenedor_cart{
+    
 }

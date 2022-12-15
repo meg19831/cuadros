@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import cartVacio from "./cart-vacio.png"
+import { Link } from "react-router-dom";
+import "./cart.css"
 //contexto
 
 import { CartContext } from "../../contexts/CartContext";
@@ -10,30 +12,30 @@ const Cart =()=>{
         const {cart,clearCart,removeProducto,totalPrice,} = useContext (CartContext)
     
         return(
-            <div className="cart-map">
+            <div className="contenedor_cart">
 {
                 cart.length === 0 ? 
                 <div className="contenedor-vacio-finalizar">
-                    <h4>Tu carrito está vacío</h4>
+                    <h4 className="h4">Tu carrito está vacío</h4>
                     <img src= {cartVacio} alt = {cartVacio} className="carrito-vacio"/>
-                    <button className="btn-principal" > Empezar a comprar!</button>
+                    <Link to = "/productos" ><button className="btn-principal" > Empezar a comprar!</button></Link>
                 </div> :
 
                 <div className="cart-map">
                     
             {
                 cart.map((prod, indice) =>
-                <div className="detail-container" key={indice}>
-                    <div className="cardDetalleCarrito">
-                        <div className="contenedor-imagen">
-                        <img src={prod.imagen} alt="imagen de produto seleccionado"/>                    
+                <div className="cart-container" key={indice}>
+                    <div className="cart_Detalle_Carrito">
+                        <div className="contenedor_cart_imagen">
+                        <img className="cart_imagen_map" src={prod.imagen} alt= {prod.imagen}/>                    
                         </div>
 
-                        <div className="descripcion-articulo">
+                        <div className="descripcion_cart_articulo">
                         <h5>{prod.titulo} {prod.categoria}</h5>
-                        <div className="contenedor-detalles">
-                            <p className='itemCount'></p>
-                            <p className='precio_articulo'>Precio por unidad: ${prod.precio}</p>
+                        <div className="descriptcion_articulo_cart">
+                            <p className='descripcion_parrafo_cart'></p>
+                            <p className='precio_articulo_cart'>Precio por unidad: ${prod.precio}</p>
                             <span>Cantidad elegida: {prod.quantity}</span>
                             <p>Subtotal: $ {prod.precio * prod.quantity }</p>
 

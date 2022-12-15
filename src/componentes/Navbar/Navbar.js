@@ -33,7 +33,6 @@ export function Navbar() {
             <Link to="/cartwidget" className="nav-link" >
                 <CartWidget/>
             </Link>
-            <p className="paragraphImg">2</p>
         </li>
     </ul>
     </div> 
