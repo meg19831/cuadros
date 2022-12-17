@@ -11,6 +11,11 @@
 
 .botonAgregar{
     background-color:rgb(241, 21, 186);
+    width: 150px;
+    height: 40px;
+    font-family: cursive;
+    color: blanchedalmond;
+    font-size: medium;
    
     
 }

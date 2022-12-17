@@ -10,6 +10,8 @@ import Inicio from "./componentes/routes/Inicio/Inicio";
 import Category from "./componentes/routes/Category/Category";
 import Error from "./componentes/Error/Error";
 import CartProvider from "./contexts/CartContext";
+import  {Toaster} from "react-hot-toast";
+
 
  
 
@@ -18,6 +20,7 @@ export default function App () {
 
       <BrowserRouter>
       <CartProvider value="">
+        <Toaster/>
         <Navbar />
           <Routes>
             <Route exact path="/" element={<Inicio/>}/>

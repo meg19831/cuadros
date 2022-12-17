@@ -1,21 +1,14 @@
 import './item.css'
-import React from 'react';
 import { Link } from "react-router-dom";
-import Loading from '../Loading/Loading';
-
-
 
 
 
 const Item = ({prod})=> {
-
-
+  
     return(
         <>
         {
-
-            Object.keys(prod).length === 0 ? 
-            <div><Loading/></div> :
+        
         <div className='item2'>
         
         <img src ={prod.imagen}className="imagen" alt ={prod.id}/>

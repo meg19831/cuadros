@@ -16,8 +16,8 @@ const Cart =()=>{
 {
                 cart.length === 0 ? 
                 <div className="contenedor-vacio-finalizar">
-                    <h4 className="h4">Tu carrito está vacío</h4>
-                    <img src= {cartVacio} alt = {cartVacio} className="carrito-vacio"/>
+                    <h4 className="contenedor-titulo">Tu carrito está vacío</h4>
+                    <img src= {cartVacio} alt = {cartVacio} className="img-carrito-vacio"/>
                     <Link to = "/productos" ><button className="btn-principal" > Empezar a comprar!</button></Link>
                 </div> :
 
@@ -32,12 +32,13 @@ const Cart =()=>{
                         </div>
 
                         <div className="descripcion_cart_articulo">
-                        <h5>{prod.titulo} {prod.categoria}</h5>
+                        <h5 className="titulo-cart">{prod.titulo} {prod.categoria}</h5>
                         <div className="descriptcion_articulo_cart">
                             <p className='descripcion_parrafo_cart'></p>
-                            <p className='precio_articulo_cart'>Precio por unidad: ${prod.precio}</p>
-                            <span>Cantidad elegida: {prod.quantity}</span>
-                            <p>Subtotal: $ {prod.precio * prod.quantity }</p>
+                            <p className='precio_articulo_cart'><strong>Precio por unidad:</strong> ${prod.precio}</p>
+                            <span><strong>Cantidad elegida:</strong> {prod.quantity}</span>
+                            <p><strong>Subtotal: </strong>$ {prod.precio * prod.quantity }</p>
+                            <p><strong>Total:</strong> ${totalPrice()}</p>
 
                             <button className="btn-secundario" onClick={() => removeProducto(prod.id)}>Eliminar producto</button>
 
@@ -48,12 +49,12 @@ const Cart =()=>{
                     </div>
                 </div>
                 )}
-                <div className="contenedor-vacio-finalizar">
-                    <p>Total: ${totalPrice()}</p>
+                <div className="contenedor-finalizar">
+                    {/* <p>Total: ${totalPrice()}</p> */}
                     <div className="botones-carrito">
                     <button className="btn-principal" onClick={clearCart}>Vaciar carrito</button>
                     
-                    <button className="btn-principal"> Finalizar compra</button>
+                    <button className="btn-principal" onClick={clearCart}> Finalizar compra</button>
                     
                     </div>
 

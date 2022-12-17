@@ -1,10 +1,119 @@
-.contenedor-vacio-finalizar{
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.contenedor_cart{
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url("./fondo.jpeg");
+background-position: cover;
+background-repeat: no-repeat;
+height: 800px;
 }
 
-.contenedor_cart{
 
+.contenedor-vacio-finalizar{
+    
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+   
+}
+
+.contenedor-titulo{
+    font-family: cursive;
+    font-size:x-large;
+   text-align: center;
+   margin-bottom: 20px;
+
+}
+
+/*  */
+
+.btn-principal{
+    width: 100px;
+    height: 80px;
+    border-radius: 2px black;
+    color: white;
+    background-color:rgb(241, 21, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-decoration:none;
+    position:static;
+    font-size: medium;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    margin-top: 30px;
+}
+
+.img-carrito-vacio{
+    height: 40vw;
+}
+
+/*productos seleccionados*/
+
+.cart-map{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.contenedor_cart_imagen{
+    border:2px solid rgb(172, 121, 226);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-bottom: 4em;
+    margin-top: 4em;
+    background-color: bisque;
+    border-radius: 25px;
+    width:230px;
+    height: 400px;
+
+}
+
+.cart_imagen_map{
+    width:200px;
+    margin-left:15px ;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.btn-secundario{
+    width: 90px;
+    height: 50px;
+    color:black;
+    background-color:rgb(22, 197, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-decoration:none;
+    position:static;
+    font-size: medium;
+    margin-top: 2em;
+}
+
+
+.descripcion_cart_articulo{
+    border:2px solid rgb(172, 121, 226);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-bottom: 4em;
+    margin-top: 4em;
+    background-color: bisque;
+    border-radius: 25px;
+    width:230px;
+    height: 120px;
+    
+}
+
+.titulo-cart{
+    font-family: cursive;
+    font-size: medium;
 }

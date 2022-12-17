@@ -8,10 +8,10 @@ import { Link } from "react-router-dom"
 export function Navbar() {
     return < div className="navBar"> 
         <ul className="nav-icono">
-        <li>
+            <li>
         <Link to = "/">< img src= {Cuadro }  className = "cuadro"  alt = 'cuadro' /></Link>
         </li>
-    </ul>
+        </ul>
         <ul className="nav-ul">
         <li>
             <Link to="/" className="nav-link">Inicio </Link>
@@ -23,6 +23,7 @@ export function Navbar() {
             <Link to="/category" className="nav-link" > "Categorias" </Link>
         </li>
     </ul>
+    
     <ul className="navbar-ul">
         <li>
             <Link to="/productos" className="nav-link">Productos</Link>

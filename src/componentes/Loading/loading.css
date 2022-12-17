@@ -1,4 +1,7 @@
-.loading{
-    width: 400px;
-    background-image: url("./fondo-loading.jpg");
+.pacman{
+   height: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
 }

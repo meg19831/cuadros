@@ -1,4 +1,4 @@
-
+import {toast} from "react-hot-toast"
 import React, {useState} from 'react'
 
 export const CartContext = React.createContext ('')
@@ -11,6 +11,7 @@ function CartProvider({children}) {
     // agregar productos al carrito
 
     const addProduct = (item, quantity)=>{
+        toast.success('Agregaste un Producto!')
          if (isInCart(item.id)) {
         setCart(cart.map(prod=>{
             return prod.id === item.id ?{...prod, quantity:prod.quantity + quantity}: prod

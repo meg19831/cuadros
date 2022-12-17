@@ -1,12 +1,14 @@
-import {loading} from "./loading.jpg"
-import "./loagin.css"
+
+import "./loading.css"
+import {PacmanLoader} from "react-spinners" 
 
 const Loading = () => {
 
+    
   
     return (
-      <div>
-        <img src={loading} alt={loading} className="loading" />
+      <div className="pacman" >
+       <PacmanLoader color="#ee39ff" size={60}/>
       </div>
     );
   };
