@@ -13,7 +13,7 @@ export const CartWidget =() => {
             <Link to= "/cart"> 
                 <img src= {Carrito } className = "carrito"  alt = {Carrito} />
             </Link>
-            <spam> {totalProductos()|| " "} </spam>
+            <p> {totalProductos()|| " "} </p>
         </div>
     )
 }

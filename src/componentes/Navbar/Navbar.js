@@ -1,6 +1,6 @@
 import React from "react"
 import "./navbar.css"
-import CartWidget from  '../CartWidget/cartWidget' 
+import CartWidget from  '../CartWidget/CartWidget' 
 import Cuadro from  '../Navbar/cuadro.jpg' 
 import { Link } from "react-router-dom"
 
@@ -20,22 +20,16 @@ export function Navbar() {
     
     <ul className="nav-ul">
         <li>
-            <Link to="/category" className="nav-link" > "Categorias" </Link>
+            <Link to="/productos" className="nav-link">Productos</Link>
         </li>
     </ul>
     
     <ul className="navbar-ul">
         <li>
-            <Link to="/productos" className="nav-link">Productos</Link>
+            <Link to="/productos" className="nav-link" > Categorias </Link>
         </li>
     </ul>
-    <ul className="nav-icono">
-        <li>
-            <Link to="/cartwidget" className="nav-link" >
-                <CartWidget/>
-            </Link>
-        </li>
-    </ul>
+        <CartWidget/>
     </div> 
 }
 

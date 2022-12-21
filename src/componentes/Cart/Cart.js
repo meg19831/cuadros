@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import cartVacio from "./cart-vacio.png"
+import cartVacio from "./empty-cart.png"
 import { Link } from "react-router-dom";
 import "./cart.css"
 //contexto

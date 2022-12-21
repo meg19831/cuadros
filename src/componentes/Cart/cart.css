@@ -4,7 +4,7 @@ justify-content: center;
 align-items: center;
 background-image: url("./fondo.jpeg");
 background-position: cover;
-background-repeat: no-repeat;
+
 height: 800px;
 }
 
@@ -47,6 +47,9 @@ height: 800px;
 
 .img-carrito-vacio{
     height: 40vw;
+
+    opacity: 0.8;
+    
 }
 
 /*productos seleccionados*/

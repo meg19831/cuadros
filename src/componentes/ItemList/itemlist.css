@@ -2,8 +2,8 @@
 .item{
   display: flex;
   flex-wrap: wrap;
-  background: url("./fondo.jpeg");
-  background-size: cover;
+  /* background: url("./fondo.jpeg");
+  background-size: cover; */
   justify-content: center;
   align-items: center;
  
