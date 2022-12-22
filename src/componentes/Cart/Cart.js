@@ -1,6 +1,8 @@
+import {addDoc, collection, getFirestore} from "firebase/firestore"
 import React, { useContext } from "react";
 import cartVacio from "./empty-cart.png"
 import { Link } from "react-router-dom";
+import {toast} from "react-hot-toast"
 import "./cart.css"
 //contexto
 
@@ -10,7 +12,38 @@ import { CartContext } from "../../contexts/CartContext";
 const Cart =()=>{
 
         const {cart,clearCart,removeProducto,totalPrice,} = useContext (CartContext)
+
+        const usuario={
+            comprador :{
+                name:'Eugenia',
+                email: 'mariaeugenia@gmail',
+                tel:'123456',
+                direccion:'abcdef'
+            },
+            items:cart.map(prod =>({id: prod.id, titulo: prod.titulo, precio: prod.precio, quantity:prod.quantity})),
+            total: totalPrice()
+        }
     
+
+        const handleClick=() =>{
+            if (cart.length<= 0) {
+                toast.error("no agregaste productos")
+                
+            }else{
+                 toast('Gracias por tu compra', {
+                icon: '👏',
+              });
+            const db = getFirestore ();
+            const usuarioCollection = collection (db, 'usuario');
+            addDoc(usuarioCollection, usuario)
+            .then(({id}) => console.log({id}));
+            clearCart()
+            }
+           
+
+
+
+        }
         return(
             <div className="contenedor_cart">
 {
@@ -32,7 +65,7 @@ const Cart =()=>{
                         </div>
 
                         <div className="descripcion_cart_articulo">
-                        <h5 className="titulo-cart">{prod.titulo} {prod.categoria}</h5>
+                        <h5 className="titulo-cart">{prod.titulo}</h5>
                         <div className="descriptcion_articulo_cart">
                             <p className='descripcion_parrafo_cart'></p>
                             <p className='precio_articulo_cart'><strong>Precio por unidad:</strong> ${prod.precio}</p>
@@ -50,14 +83,10 @@ const Cart =()=>{
                 </div>
                 )}
                 <div className="contenedor-finalizar">
-                    {/* <p>Total: ${totalPrice()}</p> */}
                     <div className="botones-carrito">
                     <button className="btn-principal" onClick={clearCart}>Vaciar carrito</button>
-                    
-                    <button className="btn-principal" onClick={clearCart}> Finalizar compra</button>
-                    
+                    <button className="btn-principal" onClick={handleClick}> Finalizar compra</button>
                     </div>
-
                 </div>
             </div>
             }            

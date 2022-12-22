@@ -2,11 +2,12 @@
 .container-detail{
     display: flex;
     justify-content: center;
-    height: 800px;
-    background-image: url(/src/imagenBody.png);
+    height: 100%;
+    background-image: url(./fondo.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    text-decoration: none;
+    
     
     
     } 

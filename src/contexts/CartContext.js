@@ -32,10 +32,13 @@ function CartProvider({children}) {
 
     //para remover carrito
 
-    const removeProducto = (id)=>setCart(cart.filter( prod=>prod.id!==id))
-
+    const removeProducto = (id)=>{
+        toast.error("Producto Eliminado ")
+        setCart(cart.filter( prod=>prod.id!==id))
+    }
     // el precio total 
         const totalPrice = () => {
+            
             return cart.reduce((acc, prod) => acc += (prod.quantity * prod.precio), 0)
         }
     // total de productos
