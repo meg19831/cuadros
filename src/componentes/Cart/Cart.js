@@ -30,16 +30,15 @@ const Cart =()=>{
                 toast.error("no agregaste productos")
                 
             }else{
-                 toast('Gracias por tu compra', {
+                toast('Gracias por tu compra', {
                 icon: '👏',
-              });
+                });
             const db = getFirestore ();
             const usuarioCollection = collection (db, 'usuario');
             addDoc(usuarioCollection, usuario)
             .then(({id}) => console.log({id}));
             clearCart()
             }
-           
 
 
 
@@ -62,7 +61,7 @@ const Cart =()=>{
                     <div className="cart_Detalle_Carrito">
                         <div className="contenedor_cart_imagen">
                         <img className="cart_imagen_map" src={prod.imagen} alt= {prod.imagen}/>                    
-                        </div>
+                    </div>
 
                         <div className="descripcion_cart_articulo">
                         <h5 className="titulo-cart">{prod.titulo}</h5>
@@ -72,13 +71,9 @@ const Cart =()=>{
                             <span><strong>Cantidad elegida:</strong> {prod.quantity}</span>
                             <p><strong>Subtotal: </strong>$ {prod.precio * prod.quantity }</p>
                             <p><strong>Total:</strong> ${totalPrice()}</p>
-
                             <button className="btn-secundario" onClick={() => removeProducto(prod.id)}>Eliminar producto</button>
-
                         </div>
-
                         </div>
-
                     </div>
                 </div>
                 )}

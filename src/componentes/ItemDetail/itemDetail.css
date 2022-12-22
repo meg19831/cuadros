@@ -41,7 +41,7 @@
     .boton{
     width: 50px;
     height: 40px;
-    border-radius: 2px black;
+    border-radius: 25px;
     color: white;
     background-color:rgb(241, 21, 186);
     display: flex;
@@ -70,6 +70,7 @@
     font-size: medium;
     margin-top: 230px;
     margin-left: 2em;
+    border-radius: 25px;
     }
 
     .bterminar{
