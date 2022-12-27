@@ -13,12 +13,12 @@ const Cart =()=>{
 
         const {cart,clearCart,removeProducto,totalPrice,} = useContext (CartContext)
 
-        const usuario={
+        const compra={
             comprador :{
-                name:'Eugenia',
-                email: 'mariaeugenia@gmail',
-                tel:'123456',
-                direccion:'abcdef'
+                name:'',
+                email: '',
+                tel:'',
+                
             },
             items:cart.map(prod =>({id: prod.id, titulo: prod.titulo, precio: prod.precio, quantity:prod.quantity})),
             total: totalPrice()
@@ -30,19 +30,19 @@ const Cart =()=>{
                 toast.error("no agregaste productos")
                 
             }else{
-                toast('Gracias por tu compra', {
+                const db = getFirestore ();
+            const usuarioCollection = collection (db, 'compra');
+            addDoc(usuarioCollection, compra)
+            /* .then(({id}) => console.log({id})); */
+            
+            toast('Gracias por tu compra', {
                 icon: '👏',
                 });
-            const db = getFirestore ();
-            const usuarioCollection = collection (db, 'usuario');
-            addDoc(usuarioCollection, usuario)
-            .then(({id}) => console.log({id}));
+            
             clearCart()
             }
-
-
-
         }
+        
         return(
             <div className="contenedor_cart">
 {
