@@ -10,6 +10,7 @@ import Inicio from "./componentes/routes/Inicio/Inicio";
 import Error from "./componentes/Error/Error";
 import CartProvider from "./contexts/CartContext";
 import  {Toaster} from "react-hot-toast";
+import ContactoFormulario from "./componentes/ContactoFormulario/ContactoFormulario";
 
 
 
@@ -30,6 +31,7 @@ export default function App () {
             <Route exact path="/cart" element={<Cart/>}/>
             <Route exact path='/detalle' element={<ItemDetailContainer/>}/>
             <Route exact path='*' element={<Error/>}/>
+            <Route exact path='form' element={<ContactoFormulario/>}/>
           </Routes>
       </CartProvider>
       <Footer/>
