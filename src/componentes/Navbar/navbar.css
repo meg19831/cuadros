@@ -13,6 +13,7 @@
     background-image: url('./fondoNavBar.jpg');
     background-size: cover;
     
+    
 }
 
 .nav-ul{
@@ -39,12 +40,14 @@ font-family: cursive;
     height: 120px;
     width: 120px;
     border-style: double;
+    color: black;
 
 }
 
 
 li{
     list-style: none;
+    font-size: larger ;
 }
 
 .paragraphImg{

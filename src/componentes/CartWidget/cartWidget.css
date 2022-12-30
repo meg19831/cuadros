@@ -1,0 +1,10 @@
+.cantidad{
+    border-radius: 25px;
+    background-color: aqua;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}

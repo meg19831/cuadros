@@ -11,6 +11,7 @@ import Error from "./componentes/Error/Error";
 import CartProvider from "./contexts/CartContext";
 import  {Toaster} from "react-hot-toast";
 import ContactoFormulario from "./componentes/ContactoFormulario/ContactoFormulario";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 

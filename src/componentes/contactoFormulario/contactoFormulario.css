@@ -1,0 +1,23 @@
+.formulario{
+    background-color: aquamarine;
+    font-family: cursive;
+
+}
+
+.fondo{
+   background-image: url(../ContactoFormulario/fondo.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.label-1{
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.botonEnviar{
+    background-color:rgb(241, 21, 186);
+    border-radius: 25px;
+    border-style:double;
+}

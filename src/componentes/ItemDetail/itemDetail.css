@@ -21,8 +21,8 @@
     margin-top: 4em;
     background-color: bisque;
     border-radius: 25px;
-    width: 250px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
 }
 
     .item_detail_titulo_cuadros{
@@ -39,8 +39,8 @@
     }
 
     .boton{
-    width: 50px;
-    height: 40px;
+    width: 60px;
+    height: 50px;
     border-radius: 25px;
     color: white;
     background-color:rgb(241, 21, 186);
@@ -48,7 +48,6 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    text-decoration:none;
     position:static;
     font-size: medium;
     margin-top: 230px;
@@ -57,7 +56,7 @@
 
     .boton-terminar{
     width: 90px;
-    height: 40px;
+    height: 70px;
     color: white;
     background-color:rgb(22, 197, 209);
     text-decoration: none;

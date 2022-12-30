@@ -5,10 +5,15 @@ import { useState, useContext } from "react";
 import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../contexts/CartContext";
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./contactoFormulario.css"
 
 
  
  const ContactoFormulario = () => {
+
+
+  
    const [id, setId] = useState();
  
    const [form, setForm] = useState({
@@ -66,7 +71,8 @@ import { CartContext } from "../../contexts/CartContext";
    };
  
    return (
-     <div>
+    
+     <div className="container mt-2">
        {typeof id !== 'undefined' ? (
          <div>
            <p>Su mensaje se ha enviado correctamente</p>
@@ -74,19 +80,26 @@ import { CartContext } from "../../contexts/CartContext";
            <Link to= "/productos" > <button> Volver a comprar </button></Link>
          </div>
        ) : (
-         <form onSubmit={finisClick}>
-           <div>
-             <label htmlFor="name">Nombre</label>
+        <div className=" border border-dark rounded  bg-ligth p-5 mb-5 mt-5 fondo">
+          <h2 className="text-center" >Formulario de Compra </h2>
+         <form  className="row g-3 form"  onSubmit={finisClick}>
+           <div className="btn-group " role="group" aria-label="Basic mixed styles example">
+           <div className="col-lg-10 ">
+           <label className="label-1" htmlFor="name" >Nombre:</label>
              <input
-               name="name"
+              className="form-control mb-2"
+              type="name" 
+              name="name"
                id="name"
-               value={form.name}
+               value={form.name} 
                onChange={changeHandler}
              />
+             </div>
            </div>
-           <div>
-             <label htmlFor="email">Email</label>
+           <div className="col-lg-10 ">
+             <label className="label-1" htmlFor="email" >Email:</label>
              <input
+             className="form-control mb-2"
                type="email"
                name="email"
                id="email"
@@ -95,16 +108,18 @@ import { CartContext } from "../../contexts/CartContext";
              />
            </div>
            <div>
-             <label htmlFor="message">Mensaje</label>
+             <label className="label-1" htmlFor="message">Mensaje:</label>
              <textarea
+             className="form-control mb-2"
                name="message"
                id="message"
                value={form.message}
                onChange={changeHandler}
              ></textarea>
            </div>
-           <button>Enviar</button>
+           <button className="botonEnviar mb-4 mt-4 "  type="submit">Enviar</button>
          </form>
+         </div>
        )}
      </div>
    );
