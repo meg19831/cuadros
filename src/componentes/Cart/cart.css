@@ -29,7 +29,7 @@ max-height: 1600px;
 
 /*  */
 
-.btn-principal{
+.btn-empezar-compra{
     width: 100px;
     height: 80px;
     border-radius: 2px black;
@@ -39,7 +39,6 @@ max-height: 1600px;
     justify-content: center;
     align-items: center;
     align-content: center;
-    text-decoration:none;
     position:static;
     font-size: medium;
     margin-left: 2em;
@@ -47,6 +46,7 @@ max-height: 1600px;
     margin-top: 30px;
     border-radius: 25px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .img-carrito-vacio{
@@ -135,10 +135,3 @@ flex-wrap: wrap;
     align-items: center;
 }
 
-/* .cart-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    width: 300px;
-} */

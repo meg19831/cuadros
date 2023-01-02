@@ -20,4 +20,47 @@
     background-color:rgb(241, 21, 186);
     border-radius: 25px;
     border-style:double;
+    text-decoration:none ;
+}
+
+/* boton de volver a comprar */
+.botonFinalCompra{
+    
+    background-color:rgb(241, 21, 186);
+    border-radius: 25px;
+    border-style:double;
+    height:40px ;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    margin-left: 490px;
+    
+}
+
+/* fondo final compra */
+
+.fondo-final-compra{
+    background-image: url(./fondo.jpg);
+    background-size:cover;
+    width: 1100px;
+    height: 800px;
+}
+
+.mensajeFinal{
+    font-family:cursive ;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:  350px;
+}
+
+.producto-comprado{
+    font-family:cursive ;
+    font-size:medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:  20px;
 }

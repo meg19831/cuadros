@@ -21,6 +21,10 @@ import "./contactoFormulario.css"
      email: '',
      message: '',
    });
+
+  
+
+
  //importamos el contexto
    const { cart, totalPrice, clearCart} = useContext (CartContext)
  
@@ -33,7 +37,12 @@ import "./contactoFormulario.css"
     total: totalPrice(),
    }
    
+   //localStorage
 
+  /*  const saveData = ()=>{
+    localStorage.setForm("nombre", form.email)
+    alert ("has guardado tu email")
+   } */
 
    //finish compra
 
@@ -64,20 +73,22 @@ import "./contactoFormulario.css"
     )}
   }
 
+
   //captura los datos y los guarda en el form en el estado
    const changeHandler = (ev) => {
      const { value, name } = ev.target;
      setForm({ ...form, [name]: value });
+     
    };
  
    return (
     
      <div className="container mt-2">
        {typeof id !== 'undefined' ? (
-         <div>
-           <p>Su mensaje se ha enviado correctamente</p>
-           <p>{id}</p>
-           <Link to= "/productos" > <button> Volver a comprar </button></Link>
+         <div className="fondo-final-compra">
+           <p className="mensajeFinal">Su mensaje se ha enviado correctamente</p>
+           <p className="producto-comprado"> El codigo de su producto es: {id}</p>
+           <Link to= "/productos" > <button className="botonFinalCompra"> Volver a comprar </button></Link>
          </div>
        ) : (
         <div className=" border border-dark rounded  bg-ligth p-5 mb-5 mt-5 fondo">
@@ -93,6 +104,7 @@ import "./contactoFormulario.css"
                id="name"
                value={form.name} 
                onChange={changeHandler}
+              
              />
              </div>
            </div>

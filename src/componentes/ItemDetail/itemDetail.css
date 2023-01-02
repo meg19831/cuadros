@@ -52,6 +52,7 @@
     font-size: medium;
     margin-top: 230px;
     margin-left: 2em;
+    text-decoration: none;
     }
 
     .boton-terminar{
@@ -75,6 +76,7 @@
     .bterminar{
         text-decoration: none;
         cursor: pointer;
+        text-decoration: none;
     }
 
     .contenido-cuadros {

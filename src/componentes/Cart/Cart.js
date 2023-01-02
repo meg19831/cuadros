@@ -22,7 +22,7 @@ const Cart =({id})=>{
                 <div className="contenedor-vacio-finalizar">
                     <h4 className="contenedor-titulo">Tu carrito está vacío</h4>
                     <img src= {cartVacio} alt = {cartVacio} className="img-carrito-vacio"/>
-                    <Link to = "/productos" ><button className="btn-principal" > Empezar a comprar!</button></Link>
+                    <Link to = "/productos" ><button className="btn-empezar-compra" > Empezar a comprar!</button></Link>
                 </div> :
 
                 <div className="cart-map">
