@@ -11,7 +11,7 @@ import { CartContext } from "../../contexts/CartContext";
 
 const Cart =({id})=>{
 
-        const {cart,clearCart,removeProducto,totalPrice,} = useContext (CartContext)
+        const {cart,clearCart,removeProducto,totalPrice,eliminarPorUnidad} = useContext (CartContext)
 
       
         
@@ -43,7 +43,9 @@ const Cart =({id})=>{
                             <span><strong>Cantidad elegida:</strong> {prod.quantity}</span>
                             <p><strong>Subtotal: </strong>$ {prod.precio * prod.quantity }</p>
                             <p><strong>Total:</strong> ${totalPrice()}</p>
+                            <button className='button' disabled={prod.quantity <= 0 && removeProducto(prod.id)} onClick={() => eliminarPorUnidad(prod.id)}> - </button>
                             <button className="btn-secundario" onClick={() => removeProducto(prod.id)}>Eliminar producto</button>
+                            
                         </div>
                         </div>
                     </div>
@@ -51,8 +53,8 @@ const Cart =({id})=>{
                 )}
                 <div className="contenedor-finalizar">
                     <div className="botones-carrito">
-                    <button className="btn-principal" onClick={clearCart}>Vaciar carrito</button>
-                    <Link  to= "/form"><button className="btn-principal" > Finalizar compra </button></Link>
+                    <button className="btn-empezar-compra" onClick={clearCart}>Vaciar carrito</button>
+                    <Link  to= "/form"><button className="btn-empezar-compra" > Finalizar compra </button></Link>
                     </div>
                 </div>
             </div>

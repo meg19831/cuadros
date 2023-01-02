@@ -40,7 +40,20 @@ function CartProvider({children}) {
         const totalPrice = () => {
             
             return cart.reduce((acc, prod) => acc += (prod.quantity * prod.precio), 0)
+
         }
+// eliminar productos por unidad
+
+        const eliminarPorUnidad = (id) =>
+    setCart(
+      cart.map((prod) => {
+        if (prod.id === id) {
+          return { ...prod, quantity: prod.quantity - 1 };
+        } else {
+          return prod;
+        }
+      })
+    );
     // total de productos
 
     const totalProductos = ()=> cart.reduce((acumulador, productoActual)=>acumulador + productoActual.quantity,0)
@@ -52,6 +65,7 @@ function CartProvider({children}) {
         removeProducto,
         addProduct,
         totalPrice,
+        eliminarPorUnidad,
         totalProductos
     }}>
 
