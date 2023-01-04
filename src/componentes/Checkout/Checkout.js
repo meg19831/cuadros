@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../contexts/CartContext";
 import "bootstrap/dist/css/bootstrap.min.css"
-import "./contactoFormulario.css"
+import "./checkout.css"
 
 
  
@@ -36,13 +36,7 @@ import "./contactoFormulario.css"
     item: cart.map(prod => ({id: prod.id,nombre: prod.titulo, precio:prod.precio, cantidad:prod.quantity })),
     total: totalPrice(),
    }
-   
-   //localStorage
 
-  /*  const saveData = ()=>{
-    localStorage.setForm("nombre", form.email)
-    alert ("has guardado tu email")
-   } */
 
    //finish compra
 

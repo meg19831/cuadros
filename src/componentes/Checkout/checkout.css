@@ -5,7 +5,7 @@
 }
 
 .fondo{
-   background-image: url(../ContactoFormulario/fondo.jpeg);
+   background-image: url(./fondo.jpeg);
    background-repeat: no-repeat;
    background-size: cover;
 }
