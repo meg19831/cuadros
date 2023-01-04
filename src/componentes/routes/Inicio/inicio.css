@@ -16,3 +16,8 @@ background-position: center;
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+.galeria{
+
+display: flex;
+}

@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+#ReactJs - Comision 34825 utilizando Create ReactApp <center><img src="https://images.ctfassets.net/0nm5vlv2ad7a/6naVcO5MsOWXuYiol4l43R/9170af8985a9af2f9218cb02806eecbc/benefits-of-react.png" width="250" height="250"/></center>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<div>
+<p style = 'text-align:center;'>
+<img src="./public/assets/img/separadores.jpg" alt="separadores" width="600px">
+</p>
+</div>
 
-In the project directory, you can run:
+## Nombre:
+*ArtDesing*
+
+<div>
+<p style = 'text-align:center;'>
+<img src="./public/assets/img/separadores.jpg" alt="separadores" width="600px">
+</p>
+</div>
+
+##Descripción:
+Este proyecto fue realizado utilizando Create React App. Es un proyecto basado en la venta de posters para cuadros.
+
+Para poder ejecutar el proyecto debes tener instalado `node` en tu computadora.
+
+Luego debes instalar los paquetes de **Create React App** `npx-create-react-app "nombre de tu carpeta"`
+
+En el directorio de tu proyecto, debes ejecutar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Se abrirá tu aplicación en tu navegador [http://localhost:3000](http://localhost:3000)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+- La aplicación cuenta con una página de inicio.
+- Una sección de **Productos** al que puedes acceder a todas las láminas disponibles.
+- Luego te encontrarás con una sección **Categorias** enla que podrás encontrar las dos categorías disponibles:
+  1. Amor
+  2. Flores
+- y finalizamos con el carrito que puede estar vacío indicando que puedes comenzar a comprar o te mostrará los posters seleccionados, la cantidad elegida, el precio y su imagen correspondiente.
+- puedes seguir agregando productos, vaciar el carrito o puedes finalizar la compra...
+- De haber seleccionado el boton finalizar compra, te llevará para completar un formulario con tu nombre, email y un mensaje. Los campos se deben completar.
+- Seleccionando el boton **enviar** mostrará un mensaje final con el número de tu producto seleccionado. Invitandote nuevamente a seguir comprando.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<div>
+<p style = 'text-align:center;'>
+<img src="./public/assets/img/separadores.jpg" alt="separadores" width="600px">
+</p>
+</div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##Visuales:
+![](public/assets/img/captura%20pantalla.png)
+<div>
+<p style = 'text-align:center;'>
+<img src="./public/assets/img/separadores.jpg" alt="separadores" width="600px">
+</p>
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##Dependencias Instaladas:
+1. `NodeJs`
+2. `npx-create-react-app "nombre de tu carpeta"`
+3. `npm i`(para instalar los módulos)
+4. `toastify-js - npm` ( Biblioteca de Notificaciones)
+5. `react-spinners - npm` (spinners de carga)
+6. `npm install react-bootstrap bootstrap` React-Bootstrap
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<div>
+<p style = 'text-align:center;'>
+<img src="./public/assets/img/separadores.jpg" alt="separadores" width="600px">
+</p>
+</div>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##Hoja de ruta:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+si tienes buenas ideas para futuras versiones, es una buena idea incluirlas en el README.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<div>
+<p style = 'text-align:center;'>
+<img src="./public/assets/img/separadores.jpg" alt="separadores" width="600px">
+</p>
+</div>
 
-## Learn More
+##Agradecimientos:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Principalmente al profesor Félix Blanco por todo lo explicado en cada una de las clases y de los after.
+- A mi familia, por todo el apoyo durante todo este tiempo de estudio.
+- A mis compañeros de la cursada.
