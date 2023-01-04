@@ -1,4 +1,5 @@
-#ReactJs - Comision 34825 utilizando Create ReactApp <center><img src="https://images.ctfassets.net/0nm5vlv2ad7a/6naVcO5MsOWXuYiol4l43R/9170af8985a9af2f9218cb02806eecbc/benefits-of-react.png" width="250" height="250"/></center>
+#ReactJs - Comision 34825 utilizando Create ReactApp 
+<center><img src="https://images.ctfassets.net/0nm5vlv2ad7a/6naVcO5MsOWXuYiol4l43R/9170af8985a9af2f9218cb02806eecbc/benefits-of-react.png" width="250" height="250"/></center>
 
 
 <div>
@@ -16,7 +17,7 @@
 </p>
 </div>
 
-##Descripción:
+## Descripción:
 Este proyecto fue realizado utilizando Create React App. Es un proyecto basado en la venta de posters para cuadros.
 
 Para poder ejecutar el proyecto debes tener instalado `node` en tu computadora.
@@ -47,7 +48,8 @@ Se abrirá tu aplicación en tu navegador [http://localhost:3000](http://localho
 </p>
 </div>
 
-##Visuales:
+## Visuales:
+
 ![](public/assets/img/captura%20pantalla.png)
 <div>
 <p style = 'text-align:center;'>
@@ -55,7 +57,7 @@ Se abrirá tu aplicación en tu navegador [http://localhost:3000](http://localho
 </p>
 </div>
 
-##Dependencias Instaladas:
+## Dependencias Instaladas:
 1. `NodeJs`
 2. `npx-create-react-app "nombre de tu carpeta"`
 3. `npm i`(para instalar los módulos)
@@ -71,7 +73,7 @@ Se abrirá tu aplicación en tu navegador [http://localhost:3000](http://localho
 </p>
 </div>
 
-##Hoja de ruta:
+## Hoja de ruta:
 
 si tienes buenas ideas para futuras versiones, es una buena idea incluirlas en el README.
 
@@ -81,7 +83,7 @@ si tienes buenas ideas para futuras versiones, es una buena idea incluirlas en e
 </p>
 </div>
 
-##Agradecimientos:
+## Agradecimientos:
 
 - Principalmente al profesor Félix Blanco por todo lo explicado en cada una de las clases y de los after.
 - A mi familia, por todo el apoyo durante todo este tiempo de estudio.
