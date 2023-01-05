@@ -54,7 +54,7 @@ const Cart =({id})=>{
                 <div className="contenedor-finalizar">
                     <div className="botones-carrito">
                     <button className="btn-empezar-compra" onClick={clearCart}>Vaciar carrito</button>
-                    <Link  to= "/form"><button className="btn-empezar-compra" > Finalizar compra </button></Link>
+                    <Link className="terminar"  to= "/form"><button className="btn-empezar-compra" > Finalizar compra </button></Link>
                     </div>
                 </div>
             </div>

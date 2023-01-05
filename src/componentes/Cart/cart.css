@@ -10,7 +10,9 @@ max-height: 1600px;
 
 }
 
-
+.terminar{
+    text-decoration: none;
+} 
 .contenedor-vacio-finalizar{
     
     justify-content: center;

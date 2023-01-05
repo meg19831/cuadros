@@ -48,6 +48,64 @@ Se abrirá tu aplicación en tu navegador [http://localhost:3000](http://localho
 </p>
 </div>
 
+## Documentación:
+
+## Almacenamiento:
+
+LocalStorage
+
+## Base de datos NoSQL:
+
+- Firebase
+
+## Componentes de la aplicación:
+
+1. En el archivo **index.js** importamos Firebase que contiene el archivo **config** y dentro de este se encuentran los datos de la App.
+Además importamos App, que contiene toda la información y los componentes del proyecto.
+**react-router-dom**  nos permite navegar a los siguientes componentes : Inicio (pagina principal), ItemListContainer (Productos), Categorias (que se encuentra dentro del componente ItemListContainer, que nos permite filtrar por rango de precio.), ItemDetailContainer (que nos permite ver el detalle del producto.), Cart (carrito de compras) y CheckOut (formulario de compra.)
+
+``` 
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './firebase/config'
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  < >
+    <App/>
+  </>
+
+)
+
+``` 
+2. ItemListContainer: muestra las categorias de los productos. Se utiliza el  Hook de useEffect y se hace filtrado por categorias.
+3. ItemDetailContainer: importa los datos de firebase utiliza los Hook useParams, useState y useEffect renderizando a ItemDetail que contiene los productos con su imagen, titulo, precio, contenido y cantidad seleccionada a través de los botones correspondientes.
+4. ItemDetail, Item e ItemList: son componentes presentacionales, son los encargados de mostrar los productos en la Web.
+5. Por medio del método map, iteramos a través de los elementos de la colección que se encuentran en ItemList y mostramos los productos.
+6. Item contiene toda la información del producto y con el botón detalle, renderiza a Item con su respectiva key.
+
+``` 
+const  ItemList  = ({prod})=> {
+  return (
+    <div className='item'>
+      {prod.map(prod=><Item prod = {prod} key = {prod.id}/>)}
+
+    </div>
+  )
+  };
+
+  export default ItemList;
+
+  ``` 
+  ## Contexto:
+  Es muy importante, ya que contiene todas las funciones para hacer funcionar un carrito de compras de una App  a través de CartProvider.
+
+  A través de la función addProduct, podemos saber que producto se agrego en CartWidget (carrito), que cantidad y su precio.
+
+  ## Checkout: 
+  Es un formulario  que solicita datos al usuario antes de finalizar la compra. Los datos ingresados son guardados  en el localStorage y en fireStore, creando una colleccion llamada "compra". Al enviar el formulario se ejecutará la función ClearCart, reseteando el formulario y enviando todos estos datos a fireStore.
+
 ## Visuales:
 
 ![](public/assets/img/captura%20pantalla.png)
@@ -88,3 +146,5 @@ si tienes buenas ideas para futuras versiones, es una buena idea incluirlas en e
 - Principalmente al profesor Félix Blanco por todo lo explicado en cada una de las clases y de los after.
 - A mi familia, por todo el apoyo durante todo este tiempo de estudio.
 - A mis compañeros de la cursada.
+
+María Eugenia Grande.

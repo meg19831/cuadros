@@ -36,9 +36,9 @@ const ItemDetail = ({prod }) => {
                 </div>
                 
             </div>
-                <Link to= "/cart" ><button className="boton-terminar">Terminar Compra </button></Link>
+                <Link className="terminar" to= "/cart" ><button  className="boton-terminar" >Terminar Compra </button></Link>
                     
-                <Link to = "/productos" ><button className="boton"> Atrás</button></Link>
+                <Link className="terminar"  to = "/productos" ><button className="boton"> Atrás</button></Link>
         </>
     )
 }
