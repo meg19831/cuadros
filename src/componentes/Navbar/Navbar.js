@@ -5,7 +5,7 @@ import Cuadro from  '../Navbar/cuadro.jpg'
 import { Link } from "react-router-dom"
 
 
-export function Navbar() {
+    const Navbar =() => {
     return < div className="navBar"> 
         <ul className="nav-icono">
             <li>
